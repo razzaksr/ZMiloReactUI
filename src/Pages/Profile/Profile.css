@@ -1,0 +1,8 @@
+.profileContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.infoWrap{
+    flex:9
+}

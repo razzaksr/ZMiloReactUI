@@ -3,7 +3,13 @@ import SearchIcon from '@mui/icons-material/Search';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ForumIcon from '@mui/icons-material/Forum';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
-export default function Topbar(){
+export default function Topbar(prop){
+    const mod=()=>{
+        prop.what(false)
+    }
+    const mods=()=>{
+        prop.what(true)
+    }
     return(
         <>
             <div className="topbarContainer">
@@ -20,7 +26,7 @@ export default function Topbar(){
                 </div>
                 <div className="topbarRight">
                     <div className="topbarLinks">
-                        <span className="topbarLink">Homepage</span>
+                        <span className="topbarLink" onClick={mods}>Homepage</span>
                         <span className="topbarLink">Timeline</span>
                     </div>
                     <div className="topbarIcons">
@@ -37,7 +43,7 @@ export default function Topbar(){
                             <span className="topbarIconBadge">1</span>
                         </div>
                     </div>
-                    <img className="topbarImg" src="/props/person/1.jpeg"/>
+                    <img onClick={mod} className="topbarImg" src="/props/person/1.jpeg"/>
                 </div>
             </div>
         </>

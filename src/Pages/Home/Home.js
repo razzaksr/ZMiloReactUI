@@ -19,7 +19,7 @@ export default function Home(){
                     <div className='homeContainer'>
                         <LeftBanner/>
                         <Feed/>
-                        <RightBanner/>
+                        <RightBanner what="regular"/>
                     </div>
                 </>
                 :

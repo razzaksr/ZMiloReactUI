@@ -10,7 +10,20 @@ export default function Profile() {
         <div className='profileContainer'>
             <LeftBanner/>
             <div className="infoWrap">
-                Profile
+                <div className="upper">
+                    <div className="proMedia">
+                        <img className="profileCover" src="/props/post/7.jpeg"/>
+                        <img className="profilePic" src="/props/person/1.jpeg"/>
+                    </div>
+                    <div className="proData">
+                        <h4 className="proName">Peige</h4>
+                        <span className="proInfo">WWE legend</span>
+                    </div>
+                </div>
+                <div className="lower">
+                    <Feed/>
+                    <RightBanner what="profile"/>
+                </div>
             </div>
         </div>
     </>

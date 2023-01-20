@@ -60,3 +60,44 @@
 .rtUser{
     font-weight: 500;
 }
+
+.userTitle{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.basicInfo{
+    list-style: none;
+    margin-bottom: 30px;
+    font-weight: 399;
+    font-size: 15px;
+}
+
+.basicItem{
+    margin-bottom: 10px;
+}
+
+.following{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.followingsInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.followImg{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.followUser{
+    text-align: center;
+}

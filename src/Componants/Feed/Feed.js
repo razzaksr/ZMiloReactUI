@@ -1,13 +1,16 @@
 import Post from "../Post/Post"
 import Share from "../Share/Share"
 import "./Feed.css"
+import { Posts } from "../../dummyData"
 
 export default function Feed() {
   return (
     <div className="fed">
         <div className="wrapfed">
           <Share/>
-          <Post/><Post/><Post/>
+          {Posts.map((p)=>(
+            <Post key={p.id} post={p} />
+          ))}
         </div>
     </div>
   )

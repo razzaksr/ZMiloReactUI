@@ -1,6 +1,7 @@
 .fed{
     flex: 6;
     box-shadow: 0px 5px 5px #0c83c8;
+    background-color: #f2f3f2;
 }
 .wrapfed{
     padding: 20px;

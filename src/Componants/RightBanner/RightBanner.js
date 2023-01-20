@@ -1,4 +1,6 @@
 import "./RightBanner.css"
+import { Users } from "../../dummyData"
+import Online from "../Online/Online"
 
 export default function RightBanner() {
   return (
@@ -13,27 +15,9 @@ export default function RightBanner() {
           <img className="ad" src="/props/ad.png"/>
           <h4 className="rtTitle">Online friends</h4>
           <ul className="rtFriendList">
-            <li className="rtFriend">
-              <div className="rtProfileImgContainer">
-                <img className="rtProfileImg" src="/props/person/2.jpeg"/>
-                <span className="rtOnline"></span>
-              </div>
-              <span className="rtUser">Kevin nash</span>
-            </li>
-            <li className="rtFriend">
-              <div className="rtProfileImgContainer">
-                <img className="rtProfileImg" src="/props/person/2.jpeg"/>
-                <span className="rtOnline"></span>
-              </div>
-              <span className="rtUser">Kevin nash</span>
-            </li>
-            <li className="rtFriend">
-              <div className="rtProfileImgContainer">
-                <img className="rtProfileImg" src="/props/person/2.jpeg"/>
-                <span className="rtOnline"></span>
-              </div>
-              <span className="rtUser">Kevin nash</span>
-            </li>
+            {(Users.map((u)=>(
+              <Online key={u.id} every={u} />
+            )))}
           </ul>
         </div>
     </div>

@@ -8,6 +8,8 @@ import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 import WorkIcon from '@mui/icons-material/Work';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+import { Users } from "../../dummyData";
+import CloseFriends from "../CloseFriends/CloseFriends";
 export default function LeftBanner() {
   return (
     <div className="banleft">
@@ -53,22 +55,9 @@ export default function LeftBanner() {
             <button className="banleftButton">Show More...</button>
             <hr className="banleftHr"/>
             <ul className="banleftFriendList">
-                <li className="banleftFriend">
-                    <img className="banleftFriendImg" src="/props/person/2.jpeg"/>
-                    <span className="banleftFriendName">Jane</span>
-                </li>
-                <li className="banleftFriend">
-                    <img className="banleftFriendImg" src="/props/person/3.jpeg"/>
-                    <span className="banleftFriendName">Wade</span>
-                </li>
-                <li className="banleftFriend">
-                    <img className="banleftFriendImg" src="/props/person/4.jpeg"/>
-                    <span className="banleftFriendName">Logan</span>
-                </li>
-                <li className="banleftFriend">
-                    <img className="banleftFriendImg" src="/props/person/5.jpeg"/>
-                    <span className="banleftFriendName">Wilson</span>
-                </li>
+                {Users.map((v)=>(
+                    <CloseFriends each={v} key={v.id}/>
+                ))}
             </ul>
         </div>
     </div>

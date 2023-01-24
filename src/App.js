@@ -2,6 +2,7 @@ import Home from "./Pages/Home/Home";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
 
 const App=()=> {
   return (
@@ -11,6 +12,7 @@ const App=()=> {
       <i>Salem</i> */}
       {/* <Home/> */}
       <Login/>
+      {/* <Register/> */}
     </>
   );
 }

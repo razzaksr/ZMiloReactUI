@@ -1,0 +1,78 @@
+.log{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fc7a46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wraplog{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.logLeft,.logRight{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logIcon{
+    font-size: 50px;
+    font-weight: 800;
+    color: #0c83c8;
+    margin-bottom: 10px;
+}
+.logDesc{
+    font-size: 24px;
+    color: #f2f3f2;
+}
+.logBox{
+    height: 300px;
+    padding: 20px;background-color: #f2f3f2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logInput{
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #0c83c8;
+    font-size: 18px;
+    padding-left: 20px;
+    background-color: #f2f3f2;
+    margin-bottom: 10px;
+}
+.logInput:focus{
+    outline: none;
+}
+.logButton{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0c83c8;
+    color: #f2f3f2;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.logForgot{
+    text-align: center;
+    color: #0c83c8;
+}
+.logRegister{
+    height: 50px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
+    border: none;
+    background-color: limegreen;
+    color: #f2f3f2;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
